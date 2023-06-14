@@ -1,0 +1,49 @@
+.col-p {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 20px;
+}
+
+.img-thumbnail {
+  width: 25em; /* Ajuste o tamanho da imagem conforme necessário usando "em" ou "rem" */
+  height: auto;
+  margin-bottom: 1em;
+}
+
+h2 {
+  font-size: 1.5em; /* Ajuste o tamanho da fonte conforme necessário usando "em" ou "rem" */
+  font-weight: bold;
+  margin-bottom: 0.5em;
+  text-align: center;
+}
+
+p {
+  font-size: 1em; /* Ajuste o tamanho da fonte conforme necessário usando "em" ou "rem" */
+  text-align: justify;
+}
+
+.post-content {
+  height: 3em; /* Altura máxima em 3 linhas */
+  overflow: hidden;
+  text-overflow: ellipsis; /* Adiciona reticências (...) ao final do texto */
+  white-space: normal; /* Permite quebrar as linhas */
+}
+.post-content:hover{
+  cursor: pointer;
+}
+
+
+
+.grid{
+  display: grid;
+  grid-template-columns: 150px 1fr 150px;
+  gap: 50px;
+}
+.main-content {
+  display: grid;
+  justify-content: center;
+  grid-template-columns: repeat(3, 1fr, 3);
+  gap: 50px;
+}

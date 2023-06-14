@@ -1,0 +1,19 @@
+footer{
+  position: fixed; /* para fixar no fim da pagina usando o bottom 0 e left 0 */
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: #333;
+  color: white;
+  padding: 10px 0;
+  text-align: center;
+  box-shadow: 1px 4px 15px rgba(0,0,0,1);
+  display: flex;
+  justify-content: center;
+}
+
+footer p{
+  display: inline-block;
+  vertical-align: middle;
+  margin: 0;
+}

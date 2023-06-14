@@ -1,0 +1,14 @@
+<form id="postForm" (submit)="savePost($event)">
+  <div class="">
+    <label for="postTitle">Título do Post:</label>
+    <input type="text" id="postTitle" name="postTitle" required><br><br>
+  </div>
+
+  <label for="postImage">Insira uma imagem:</label>
+  <input type="file" id="postImage" name="postImage" accept="image/*" required><br><br>
+
+  <label for="postContent">Texto do post:</label><br>
+  <textarea class="areaPost" id="postContent" name="postContent" required></textarea><br><br>
+
+  <button type="submit">Salvar</button>
+</form>

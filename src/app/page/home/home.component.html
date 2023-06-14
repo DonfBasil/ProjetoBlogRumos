@@ -1,0 +1,63 @@
+<!-- pós parallax -->
+<section class="module content grid col col-p">
+  <div class="sidebar">
+    <!-- <p>menu lateral</p> -->
+  </div>
+
+  <div class="main-content">
+    <!-- pós parallax -->
+    <div class="container">
+      <div class="row">
+        <div id="postContainer">
+          <div class="row">
+            <div class="col " *ngFor="let post of posts" (click)="openPost(post)">
+              <img [src]="post.image" class="img-thumbnail" alt="...">
+              <h2>{{ post.title }}</h2>
+              <p class="post-content">{{ post.content }}</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div><br><br></div>
+  </div>
+</section>
+
+
+      <div><br><br></div>
+
+      <div class="container">
+        <div class="row">
+          <div class="col col-p">
+            <!-- card -->
+            <img src="../../../assets/img-posts/Captura de ecrã 2023-05-16, às 11.40.42.png" class="img-thumbnail" alt="...">
+            <h2>Lorem ipsum dolor sit amet consectetur adipisicing elit.</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora voluptates hic distinctio id.
+              At eum laudantium facere sunt minus eligendi earum quas.
+              Error velit explicabo impedit excepturi hic eaque minus!</p>
+            <!-- fim card -->
+          </div>
+          <div class="col col-p">
+            <!-- card -->
+            <img src="../../../assets/img-posts/Captura de ecrã 2023-05-16, às 11.40.53.png" class="img-thumbnail" alt="...">
+            <h2>Lorem ipsum dolor sit amet consectetur adipisicing elit.</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora voluptates hic distinctio id.
+              At eum laudantium facere sunt minus eligendi earum quas.
+              Error velit explicabo impedit excepturi hic eaque minus!</p>
+            <!-- fim card -->
+          </div>
+          <div class="col col-p">
+            <!-- card -->
+            <img src="../../../assets/img-posts/Captura de ecrã 2023-05-16, às 11.41.09.png" class="img-thumbnail" alt="...">
+            <h2>Lorem ipsum dolor sit amet consectetur adipisicing elit.</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora voluptates hic distinctio id.
+              At eum laudantium facere sunt minus eligendi earum quas.
+              Error velit explicabo impedit excepturi hic eaque minus!</p>
+            <!-- fim card -->
+          </div>
+        </div>
+      </div>
+
+
+    <div><br><br></div>

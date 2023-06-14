@@ -1,0 +1,64 @@
+header {
+  background-color: #333;
+  color: #fff;
+  padding: 20px;
+  width: 100%;
+  box-shadow: 1px 4px 15px rgba(0, 0, 0, 0.8);
+  margin-bottom: 20px;
+}
+
+.app-navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 130px;
+  z-index: 9999; /* tamanho z-index  maior que o dos elementos de conteúdo */
+}
+
+app-navbar.parallax {
+  background-color: rgba(0, 0, 0, 0.5); /* Define a cor de fundo desejada */
+  transform: translateY(-50%); /* Desloca o navbar verticalmente */
+  transition: background-color 0.3s ease; /* Adiciona uma transição suave */
+}
+
+
+nav ul {
+  list-style-type: none;
+  padding-top: 5px;
+}
+nav ul li {
+  display: inline;
+  margin-right: 5px;
+}
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  padding: 5px;
+}
+
+.menu.right {
+  float: right;
+  display: inline;
+  padding: 2px;
+}
+
+.input-search {
+  padding: 5px;
+  margin-right: 20px;
+  font-size: 13px;
+  border-radius: 5px;
+  border: none;
+  outline: none;
+}
+
+.fa-search {
+  cursor: pointer;
+  margin-right: 60px;
+}
+.fa-search:hover {
+  color: #ff9100;
+}
+.fa-search:active {
+  opacity: 0.6;
+}
