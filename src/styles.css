@@ -7,16 +7,11 @@
   overflow-wrap: break-word;
 
 }
-html, body{
-  height: 100%;
-}
 body{
   display: flex;
   flex-direction: column;
 }
-.clear{
-  clear: both;
-}
+
 .router-container {
   margin-top: 130px; /* margem para aparecer abaixo do app-navbar */
   flex: 1;

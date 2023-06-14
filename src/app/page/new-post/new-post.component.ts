@@ -1,4 +1,7 @@
 import { Component } from '@angular/core';
+import { Router } from '@angular/router';
+
+
 
 @Component({
   selector: 'app-new-post',
@@ -6,6 +9,7 @@ import { Component } from '@angular/core';
   styleUrls: ['./new-post.component.css']
 })
 export class NewPostComponent {
+  constructor(private router: Router){}
   savePost(event: Event) {
     event.preventDefault(); // Evita o recarregamento da página
 
@@ -41,6 +45,10 @@ export class NewPostComponent {
     // Adiciona o novo card na página principal
     this.addPostCard(post);
 
+    // Redireciona para a rota desejada
+    this.router.navigate([''], {
+      state: { title: 'Blog Rumos Project' }
+    });
   }
 
   addPostCard(post: { title: string; image: string; content: string }) {
